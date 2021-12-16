@@ -92,7 +92,6 @@ module.exports.editStudentDetails = function (req, res) {
     });
   });
 };
-
 module.exports.updateStudent = function (req, res) {
   Student.findOne({ email: req.body.email }, function (err, student) {
     if (err) {
@@ -192,3 +191,5 @@ module.exports.updateStudent = function (req, res) {
     return res.redirect("back");
   });
 };
+
+
