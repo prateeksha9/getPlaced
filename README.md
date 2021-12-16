@@ -11,7 +11,7 @@ This is a placement cell project meant to manage the status of many students
 # Important links
 
 - Hosting Link: https://managejobs.herokuapp.com/users/sign-in
-- Explaination Link: 
+- Explaination Link: https://youtu.be/2b9EQUmolzI
 
 # Tech stack
 - express: it is managing the frontend of this App
