@@ -120,7 +120,7 @@ module.exports.updateStudent = function (req, res) {
             $push: {
               interviews: [
                 {
-                  company_name: req.body.company,
+                  company: req.body.company,
                   date: req.body.date,
                   result: req.body.result,
                 },
@@ -149,14 +149,21 @@ module.exports.updateStudent = function (req, res) {
               { company_name: req.body.company },
               {
                 $push: {
-                  students: {
-                    student: student._id,
-
-                    result: "Interview Pending",
-                  },
+                  students: [
+                    {
+                      student: student._id,
+                      result: "Interview Pending",
+                    },
+                  ],
                 },
+              },
+              function (err, company) {
+                if (err) {
+                  console.log(err);
+                }
               }
             );
+            company.save();
           } else {
             Interview.create(
               {
