@@ -1,0 +1,104 @@
+<div class="head" style="margin-top: 20px">
+  <h1>Add Student</h1>
+</div>
+
+<div class="form">
+  <form action="/student/createStudent" method="POST">
+    <div class="form-input">
+      <input type="text" name="name" placeholder="Student name" required />
+    </div>
+    <div class="form-input">
+      <input type="text" name="email" placeholder="Student email" required />
+    </div>
+    <div class="form-input">
+      <input type="text" name="batch" placeholder="Student Batch" required />
+    </div>
+    <div class="form-input">
+      <select class="form-input" name="status">
+        <optgroup label="Status" placeholder="Status">
+          <!-- <option name="" value="0">Status</option> -->
+          <option name="placed" value="Placed">Placed</option>
+          <option name="Not placed" value="Not Placed">Not Placed</option>
+        </optgroup>
+      </select>
+    </div>
+    <div class="threeInput threeSubInput">
+      <div class="form-input">
+        <input
+          class="subInput"
+          type="integer"
+          minValue="100"
+          max="100"
+          name="dsa_score"
+          placeholder="DSA Score"
+          required
+        />
+      </div>
+      <div class="form-input">
+        <input
+          class="subInput"
+          type="integer"
+          minValue="100"
+          max="100"
+          name="webD_score"
+          placeholder="Web Development Score"
+          required
+        />
+      </div>
+      <div class="form-input">
+        <input
+          class="subInput"
+          type="integer"
+          minValue="100"
+          max="100"
+          name="react_score"
+          placeholder="React Score"
+          required
+        />
+      </div>
+    </div>
+    <!-- <div class="threeInput threeSubInput">
+      <div class="form-input threeSubInput">
+        <input
+          class="subInput"
+          type="text"
+          name="company"
+          placeholder="Company Name"
+        />
+      </div>
+      <div class="form-input threeSubInput">
+        <input
+          class="subInput"
+          type="date"
+          name="date"
+          placeholder="Interview Date"
+        />
+      </div>
+      <div class="form-input threeSubInput">
+        <select class="subInput" class="form-input" name="result">
+          <optgroup label="Result">
+            <option name="selected" value="Selected">Selected</option>
+            <option name="not_selected" value="Not Selected">
+              Not Selected
+            </option>
+            <option name="on_hold" value="On Hold">On Hold</option>
+            <option name="on_hold" value="On Hold">Didn't Attend</option>
+            <option name="on_hold" value="Interview Pending">
+              Interview Pending
+            </option>
+          </optgroup>
+        </select>
+      </div>
+    </div> -->
+
+    <div class="form-input">
+      <input type="Submit" value="Add Student" />
+    </div>
+    <div class="studentCardActions">
+      <div class="cardLinks">
+        <a href="/users/profile">Back</a>
+      </div>
+    </div>
+    <!-- <button>Submit</button> -->
+  </form>
+</div>

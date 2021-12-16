@@ -1,0 +1,119 @@
+<div class="form">
+  <form action="/student/createStudent" method="POST">
+    <div class="form-input">
+      <input
+        type="text"
+        name="name"
+        placeholder="Name: <%= student.name%>"
+        required
+        disabled
+      />
+    </div>
+    <div class="form-input">
+      <input
+        type="text"
+        name="email"
+        placeholder="email: <%= student.email %>"
+        required
+        disabled
+      />
+    </div>
+    <div class="form-input">
+      <input
+        type="text"
+        name="batch"
+        placeholder="Batch: <%= student.batch %>"
+        required
+        disabled
+      />
+    </div>
+    <div class="form-input">
+      <input
+        type="text"
+        name="batch"
+        placeholder="Placement Status: <%= student.status %>"
+        required
+        disabled
+      />
+    </div>
+    <div class="threeInput threeSubInput">
+      <div class="form-input">
+        <input
+          class="subInput"
+          type="integer"
+          minValue="100"
+          max="100"
+          name="dsa_score"
+          placeholder="DSA Score: <%= student.dsa_score%>"
+          required
+          disabled
+        />
+      </div>
+      <div class="form-input">
+        <input
+          class="subInput"
+          type="integer"
+          minValue="100"
+          max="100"
+          name="webD_score"
+          placeholder="WebD Score: <%= student.webD_score %>"
+          required
+          disabled
+        />
+      </div>
+      <div class="form-input">
+        <input
+          class="subInput"
+          type="integer"
+          minValue="100"
+          max="100"
+          name="react_score"
+          placeholder="React Score: <%= student.react_score%>"
+          required
+          disabled
+        />
+      </div>
+    </div>
+
+    <% for(interview of student.interviews){%>
+    <div class="threeInput threeSubInput">
+      <div class="form-input threeSubInput">
+        <input
+          class="subInput"
+          type="text"
+          name="company"
+          placeholder="<%= interview.company%>"
+          required
+          disabled
+        />
+      </div>
+      <div class="form-input threeSubInput">
+        <input
+          class="subInput"
+          type="text"
+          name="date"
+          placeholder="<%= interview.date %>"
+          disabled
+          required
+        />
+      </div>
+      <div class="form-input threeSubInput">
+        <input
+          class="subInput"
+          type="text"
+          name="result"
+          placeholder="<%= interview.result %>"
+          disabled
+          required
+        />
+      </div>
+    </div>
+    <%}%>
+
+    <div class="studentCardActions">
+      <div class="cardLinks">
+        <a href="/users/profile">Back</a>
+      </div>
+    </div>
+  </form>
+</div>

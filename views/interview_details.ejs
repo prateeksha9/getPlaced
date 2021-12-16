@@ -1,0 +1,54 @@
+<div class="form">
+  <form action="/student/createStudent" method="POST">
+    <div class="form-input">
+      <input
+        type="text"
+        name="name"
+        placeholder="Name: <%= interview.company_name%>"
+        required
+        disabled
+      />
+    </div>
+    <div class="form-input">
+      <input
+        type="text"
+        name="batch"
+        placeholder="Date: <%= interview.date %>"
+        required
+        disabled
+      />
+    </div>
+    <h3>Students Applied for this interview</h3>
+    <%if(interview.students){%> <% for(student of interview.students){%>
+    <div class="threeInput threeSubInput">
+      <div class="form-input threeSubInput">
+        <input
+          class="subInput"
+          type="text"
+          name="company"
+          placeholder="<%= student.student.name%>"
+          required
+          disabled
+        />
+      </div>
+
+      <div class="form-input threeSubInput">
+        <input
+          class="subInput"
+          type="text"
+          name="result"
+          placeholder="<%= student.result %>"
+          disabled
+          required
+        />
+      </div>
+    </div>
+    <%}%> <%} %>
+
+    <div class="studentCardActions">
+      <div class="cardLinks">
+        <a href="/users/profile">Back</a>
+      </div>
+    </div>
+  </form>
+</div>

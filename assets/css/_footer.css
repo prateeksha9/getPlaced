@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: #191b1d;
+  margin: 0px 0px;
+  color: #a9a9a9;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+.footer_content {
+  margin-left: 10%;
+  display: flex;
+  flex-direction: row;
+}
+.image_footer {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}

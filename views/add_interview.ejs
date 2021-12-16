@@ -1,0 +1,27 @@
+<div class="head" style="margin-top: 20px">
+  <h1>Add Interview</h1>
+</div>
+
+<div class="form">
+  <form action="/interview/createInterview" method="POST">
+    <div class="form-input">
+      <input
+        type="text"
+        name="company_name"
+        placeholder="Company name"
+        required
+      />
+    </div>
+    <div class="form-input">
+      <input type="date" name="interview_date" placeholder="Interview Date" />
+    </div>
+    <div class="form-input">
+      <input type="Submit" value="Add Interview" />
+    </div>
+    <div class="studentCardActions">
+      <div class="cardLinks">
+        <a href="/users/profile">Back</a>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,26 @@
+<div class="studentCard">
+  <div>
+    <span class="cardHead"><strong><%= interview.company_name %></strong></span>
+  </div>
+  <div>
+    <span class="scoreHead"
+      ><strong>Interview Date: <%= interview.date %></strong></span
+    >
+  </div>
+  <div class="scoreHead"><strong></strong></div>
+  <div class="score">
+    <% if(interview.students){%> <%= interview.students.length%> students
+    enrolled for this oppurtunity<%}%>
+  </div>
+
+  <div class="studentCardActions">
+    <div class="cardLinks">
+      <a href="/interview/show-interview-details/<%= interview.id %>"
+        >View Details</a
+      >
+    </div>
+    <!-- <div style="margin-left: 10px">
+      <a href="/student/edit-student-details/<%= student.id %>">Edit Details</a>
+    </div> -->
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<!-- <html>
+  <head>
+    <title><%= title %></title>
+  </head>
+
+  <body>
+    <%- include('_header'); %> -->
+<div class="head">
+  <h1>
+    Sign up to proceed further
+    <!-- / <%= title %> -->
+  </h1>
+</div>
+<!-- <%- include('_footer'); %>
+  </body>
+</html> -->
+<div class="form">
+  <form action="/users/create-session" method="POST">
+    <div class="form-input">
+      <input type="email" name="email" placeholder="Your email" required />
+    </div>
+    <div class="form-input">
+      <input
+        type="password"
+        name="password"
+        placeholder="Your password"
+        required
+      />
+    </div>
+    <div class="form-input">
+      <input type="Submit" value="Sign In" />
+    </div>
+  </form>
+</div>
+<div class="actions">
+  <div class="links">Don't have an account?</div>
+  <div class="links">
+    <a href="users/sign-up">Sign Up</a>
+  </div>
+  <!-- <div class="links"><a href="users/sign-up">Sign Up</a></div> -->
+</div>
+
+<!-- <button action="/user/sign-in">Sign In</button> -->

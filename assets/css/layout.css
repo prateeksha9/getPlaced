@@ -1,0 +1,139 @@
+body {
+  margin-left: 0%;
+  margin-top: 0px;
+  margin-right: 0px;
+  background-color: #202124;
+  color: #a9a9a9;
+  /* text-align: center; */
+}
+
+.head {
+  margin-left: 20%;
+  color: #a9a9a9;
+  margin-top: 120px;
+}
+.actions {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.links {
+  margin-left: 20px;
+  width: 10%;
+  height: 40px;
+  margin-right: 20px;
+  padding-left: 32px;
+  padding-top: 20px;
+}
+
+.links a {
+  color: #a9a9a9;
+  font-size: 20px;
+}
+
+.form {
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input input {
+  height: 40px;
+  width: 60%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border-width: 0;
+}
+
+.headings {
+  margin-left: 40%;
+  color: aliceblue;
+  margin-top: 10px;
+}
+
+.headingsG a {
+  margin-left: 30%;
+  color: #a9a9a9;
+  /* aliceblue; */
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.threeInput {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.threeSubInput {
+  width: 58.5%;
+  padding-right: 20px;
+  align-content: stretch;
+}
+
+.subInput {
+  width: 100%;
+}
+
+.studentCard {
+  padding: 10px;
+  width: 20%;
+  background-color: #191b1d;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+.score {
+  display: flex;
+  flex-direction: row;
+}
+
+.studentCardActions {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+}
+
+input:disabled {
+  background: #dddddd;
+  cursor: pointer;
+}
+
+.student_list_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.links-footer {
+  margin-left: 20px;
+  height: 40px;
+  margin-right: 20px;
+  padding-top: 20px;
+}
+
+.name {
+  margin-top: 6px;
+}
+
+.cardLinks {
+  width: 50%;
+}
+.cardLinks a {
+  color: #a9a9a9;
+}
+
+.scoreSub {
+  width: 33%;
+  margin-top: 10px;
+}
+
+.cardHead {
+  font-size: 20px;
+}
+
+.scoreHead {
+  margin-top: 10px;
+}

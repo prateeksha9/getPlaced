@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="/css/_header.css" />
+
+<header class="header">
+  <div class="actions">
+    <div class="links">
+      <a href="/users/profile"
+        ><img
+          src="https://thumbs.dreamstime.com/b/placement-icon-trendy-flat-vector-white-backg-background-general-collection-illustration-can-be-use-web-mobile-eps-130335999.jpg"
+          alt="logo"
+          class="image"
+      /></a>
+    </div>
+    <%if(locals.user){%>
+    <div class="links name"><a href="/student/addStudent"> Add Student</a></div>
+
+    <div class="links name">
+      <a href="/interview/addInterview"> Add Interview</a>
+    </div>
+    <div class="links name"><a href="csv/downloadcsv">Download</a></div>
+    <div class="links name"><a href="reset-password"> Reset Password</a></div>
+    <div class="links name"><a href="sign-out"> Sign Out</a></div>
+    <%}%>
+  </div>
+</header>

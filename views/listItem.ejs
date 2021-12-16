@@ -1,0 +1,36 @@
+<div class="studentCard">
+  <div>
+    <span class="cardHead"><strong><%= student.name %></strong></span>
+  </div>
+  <div>
+    <span>
+      <strong
+        >Batch: <%= student.batch %> | Status: <%= student.status%></strong
+      ></span
+    >
+  </div>
+  <div class="scoreHead"><strong>Scores</strong></div>
+  <div class="score">
+    <div class="scoreSub">
+      <div>DSA</div>
+      <div><%= student.dsa_score%></div>
+    </div>
+    <div class="scoreSub">
+      <div>WebD</div>
+      <div><%= student.webD_score%></div>
+    </div>
+    <div class="scoreSub">
+      <div>React</div>
+      <div><%= student.react_score%></div>
+    </div>
+  </div>
+
+  <div class="studentCardActions">
+    <div class="cardLinks">
+      <a href="/student/show-student-details/<%= student.id %>">View Details</a>
+    </div>
+    <div style="margin-left: 10px" class="cardLinks">
+      <a href="/student/edit-student-details/<%= student.id %>">Edit Details</a>
+    </div>
+  </div>
+</div>

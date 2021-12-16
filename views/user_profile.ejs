@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/user_profile.css" />
+
+<h2 style="margin-left: 4%">Students</h2>
+<% if(students.length == 0){%> No Student is added <%}%>
+<div id="student_list_container">
+  <ul class="student_list_container">
+    <% for(student of students){%> <%- include('listItem'); %> <%}%>
+  </ul>
+</div>
+
+<h2 style="margin-left: 4%">Upcoming Interviews</h2>
+<% if(interviews.length == 0){%> No Upcoming Interviews!! <%}%>
+<div id="student_list_container">
+  <ul class="student_list_container">
+    <% for(interview of interviews){%> <%- include('interviewsListItem'); %>
+    <%}%>
+  </ul>
+</div>
