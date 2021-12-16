@@ -186,6 +186,11 @@ module.exports.updateStudent = function (req, res) {
       );
       // console.log("student status updated");
       return res.redirect("back");
+    }else {
+      req.flash(
+        "error",
+        "Student not found. Enter correct Email ID of the student"
+      );
     }
     console.log("student found");
     return res.redirect("back");
