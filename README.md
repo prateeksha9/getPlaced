@@ -6,6 +6,7 @@ This is a placement cell project meant to manage the status of many students
 - Which new company is posting a job oppurtunity on your platform?
 - How many students have shown interst in their oppurtunity?
 - Download combined data of all the students.
+- The App is hosted on Heroku
 
 # Important links
 
