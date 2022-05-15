@@ -4,7 +4,7 @@ This is a placement cell project meant to manage the status of many students
 - What is the result of the placement processes they are participating in?
 - How many jobs they have showed their interests in?
 - Which new company is posting a job oppurtunity on your platform?
-- How many students have shown interst in their oppurtunity?
+- How many students have shown interest in their oppurtunity?
 - Download combined data of all the students.
 - The App is hosted on Heroku
 
